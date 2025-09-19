@@ -8,9 +8,43 @@
 
     <!--CSS External-->
     <link rel="stylesheet" href="css/style.css">
+
+<!--Tailwind Css-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
+
+   <!--Header section-->
+   <header>
+    <h1 class="text-4xl font-bold">Todo List</h1> <br>
+   </header>
+
+   <!--Main Section-->
+   <main>
+    <form>
+     <input type="text" id="todo-input" placeholder="Add your new todo" class="border border-gray-300 rounded p-2 mb-2 w-full" /> 
+     <input type="date" id="todo-date" class="border border-gray-300 rounded p-2 w-full" /> 
+   <button type="button" onclick="addTodo()" class="border border-gray-300 rounded p-2 bg-yellow-500 text-white mt-2 w-full">Add todo</button>
+    </form>
+
+    <!-- List of Todos: -->
+     <section class="mt-6">
+    <header>
+        <h2 class="text-2xl font-bold">Your Todos</h2>
+    </header>
+    
+    <ul class="mt-4">
+        <li class="border-b border-black-300 py-2 ">sample todo 1 - <span class="text-sm text-gray-500">2025-09-19</span></li>
+        <li class="border-b border-black-300 py-2 ">sample todo 2 - <span class="text-sm text-gray-500">2025-09-20</span></li>
+    </ul>
+</section>
+   </main>
+
+   <!--Footer Section-->
+   <footer>
+    <p>© 2025 Eka Widiastuti Website</p>
+   </footer>
 
     <!--JS External-->
     <script src="js/script.js"></script>
